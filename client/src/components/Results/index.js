@@ -9,7 +9,7 @@ export default function Results(props) {
                     <h5>{props.title}</h5>
                 </Col>
                 <Col xs={1}>
-                    <Button variant='dark'><a rel='noreferrer' target='_blank' href={props.link}>View</a></Button>
+                    <Button rel='noreferrer' target='_blank' href={props.link} variant='dark'>View</Button>
                 </Col>
                 <Col xs={1}>
                     <Button variant='dark'>Save</Button>
