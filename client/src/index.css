@@ -12,6 +12,6 @@ code {
 		monospace;
 }
 
-h1 {
-	text-align: center;
+input {
+	width: 100%;
 }

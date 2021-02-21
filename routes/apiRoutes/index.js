@@ -1,7 +1,5 @@
 const router = require('express').Router();
-const { apiGet, apiPost, apiDelete } = require('../../controllers/apiController.js');
-
-router.get('/books', apiGet);
+const { apiPost, apiDelete } = require('../../controllers/apiController.js');
 
 router.post('/books', apiPost);
 
