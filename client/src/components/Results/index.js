@@ -5,13 +5,11 @@ export default function Results(props) {
     return (
         <Container style={{ border: '2px solid #000000' }} className='mx-3' fluid>
             <Row className='my-3'>
-                <Col xs={10}>
+                <Col xs={11}>
                     <h5>{props.title}</h5>
                 </Col>
                 <Col xs={1}>
-                    <Button rel='noreferrer' target='_blank' href={props.link} variant='dark'>View</Button>
-                </Col>
-                <Col xs={1}>
+                    <Button className='mr-1' rel='noreferrer' target='_blank' href={props.link} variant='dark'>View</Button>
                     <Button variant='dark'>Save</Button>
                 </Col>
             </Row>
