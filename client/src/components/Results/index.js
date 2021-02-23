@@ -10,7 +10,7 @@ export default function Results(props) {
                 </Col>
                 <Col xs={1}>
                     <Button className='mr-1' rel='noreferrer' target='_blank' href={props.link} variant='dark'>View</Button>
-                    <Button variant='dark'>Save</Button>
+                    <Button variant='dark' onClick={() => props.btnClick(props)}>{props.btn1}</Button>
                 </Col>
             </Row>
             <Row>

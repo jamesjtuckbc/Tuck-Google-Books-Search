@@ -9,9 +9,7 @@ export default {
             method: 'get',
             url: 'https://www.googleapis.com/books/v1/volumes?q=' + searchTerm,
         });
-        // const newResult = result.data.items;
         result.data.items.forEach(element => {
-            console.log(element)
             books.push({
                 id: _.get(element, 'id', ''),
                 title: _.get(element, 'volumeInfo.title', 'Title currently not availible'),
@@ -22,5 +20,27 @@ export default {
             })
         });
         return (books)
+    },
+    get: async function () {
+        const results = await axios({
+            method: 'get',
+            url: '/api/books',
+        });
+        return results;
+    },
+    post: async function (book) {
+        const results = await axios({
+            method: 'post',
+            url: '/api/books',
+            data: book,
+        });
+        return results;
+    },
+    delete: async function (id) {
+        const results = await axios({
+            method: 'delete',
+            url: 'api/books/' + id,
+        });
+        return results;
     }
 };

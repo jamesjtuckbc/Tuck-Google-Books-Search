@@ -1,10 +1,9 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
-import { withRouter } from 'react-router';
 
-function Navigation({ location }) {
+function NavBar() {
     return (
-        <Navbar bg='light' variant='pills' expand='md' activeKey={location.pathname}>
+        <Navbar bg='light' variant='pills' expand='md'>
             <Navbar.Brand href='/'>Google Books</Navbar.Brand>
             <Navbar.Toggle aria-controls='basic-navbar-nav' />
             <Navbar.Collapse id='basic-navbar-nav'>
@@ -16,7 +15,5 @@ function Navigation({ location }) {
         </Navbar>
     )
 }
-
-const NavBar = withRouter(Navigation)
 
 export default NavBar;
