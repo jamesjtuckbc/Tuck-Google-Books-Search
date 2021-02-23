@@ -21,9 +21,9 @@ function Saved() {
         console.log(savedBooks)
     }
 
-    useEffect(() => {
-        console.log(savedBooks)
-    }, [savedBooks]);
+    // useEffect(() => {
+    //     console.log(savedBooks)
+    // }, [savedBooks]);
 
     useEffect(() => {
         async function fetchData() {
